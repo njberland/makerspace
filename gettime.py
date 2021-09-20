@@ -1,3 +1,5 @@
+# code to connect to wifi and sync time 
+
 import time
 import network
 import ntptime
