@@ -2,6 +2,9 @@ from machine import Pin
 from neopixel import NeoPixel
 import time
 
+# make sure the pin number and pixel count are correct
+PIN = 21
+PIXELS = 16
 
 def demo(pin, n):
     np = NeoPixel(Pin(pin), n)
@@ -40,4 +43,4 @@ def demo(pin, n):
         np[i] = (0, 0, 0)
     np.write()
 
-demo(21,16)
+demo(PIN,PIXELS)
